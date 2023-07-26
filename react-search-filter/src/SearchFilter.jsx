@@ -1,6 +1,6 @@
 import React from "react";
 
-//names(keys) are passed in props instead of values
+//names are passed in props instead of keys
 export function SearchFilter({ filterSearchResults }) {
   return (
     <div className="search-bar">

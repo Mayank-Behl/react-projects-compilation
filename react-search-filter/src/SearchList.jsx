@@ -1,4 +1,6 @@
 import React from "react";
+import { Container, Typography, TextField } from "@mui/material";
+import "@emotion/styled";
 
 //names(keys) are passed in props instead of values
 export default function SearchList({ itemList }) {

@@ -2,6 +2,9 @@ import { useState } from "react";
 import { SearchFilter } from "./SearchFilter";
 import SearchList from "./SearchList";
 
+import { Container, Typography, TextField } from "@mui/material";
+import "@emotion/styled";
+
 // import "./App.css";
 
 //List that needs to be filtered
@@ -48,7 +51,14 @@ export default function App() {
   }
 
   return (
-    <div className="search-app">
+    <Container maxWidth="sm">
+      <Typography
+        variant="h3"
+        sx={{ margin: "20px", padding: "10px", fontFamily: "sans-serif" }}
+      >
+        Search App
+      </Typography>
+
       {/* the filterSearchResults is the name of the prop [KEY] and {filterSearchResults} is the value that is the function 
       that is being passed in the prop name [FUNCTION ITESLF IS THE VALUE OF THE PROP THAT IS BEING PASSED]*/}
       {/* Prop = Key + Value  = filterSearchResults + {filterSearchResults}*/}
@@ -76,6 +86,6 @@ export default function App() {
       This will make me understand the basis of the react application I got introduction in the previous project
       Then move to the JS exercises accordingly on leetcode.
       */}
-    </div>
+    </Container>
   );
 }
