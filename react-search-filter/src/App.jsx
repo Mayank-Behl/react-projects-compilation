@@ -1,4 +1,7 @@
 import { useState } from "react";
+import { SearchFilter } from "./SearchFilter";
+import SearchList from "./SearchList";
+
 // import "./App.css";
 
 //List that needs to be filtered
@@ -20,11 +23,14 @@ export default function App() {
   //takes a parameter, which would be the letter that is being typed
   //then it would update the state
   //THIS FUNCTIONALITY IS CALLED ON CHANGE AS PER THE INPUT FIELD IN THE DIV
+
   function filterSearchResults(e) {
     //this is the value that is being passed in the search bar
     const searchQuery = e.target.value;
+
     //using a variable to keep the track of the updated list, which is initially set to the complete list, as ideally filtering not happend yet
     var updatedList = { ...itemList };
+
     //updating the updatedList variable using the filter, iterates through each element of the list
     updatedList = itemList.filter((item) => {
       {
@@ -37,29 +43,22 @@ export default function App() {
     });
 
     //setting the state with new filtered list variable updateList
+
     setSearchInput(updatedList);
   }
 
   return (
     <div className="search-app">
-      <div className="search-bar">
-        <label htmlFor="searchBar">Search for your item</label>
-        {/* input fields calls the  filterSearchResults whenever there is any change in it*/}
-        <input
-          type="text"
-          name="searchBar"
-          id="searchBar"
-          onChange={filterSearchResults}
-        />
-      </div>
-      <div className="listItems">
-        {/* Iterating the array elements and rendering the list using a map, the map needs a key so id is being used for that */}
-        <ol>
-          {searchInput.map((item) => {
-            return <li key={item.id}>{item}</li>;
-          })}
-        </ol>
-      </div>
+      {/* the filterSearchResults is the name of the prop [KEY] and {filterSearchResults} is the value that is the function 
+      that is being passed in the prop name [FUNCTION ITESLF IS THE VALUE OF THE PROP THAT IS BEING PASSED]*/}
+      {/* Prop = Key + Value  = filterSearchResults + {filterSearchResults}*/}
+      <SearchFilter filterSearchResults={filterSearchResults}></SearchFilter>
+
+      {/* Can use itemList here for consistency by anything could be use since it is the name
+      -> itemsList if used would signify that the original array itemList, state modification is being done using the state variable
+      searchInput*/}
+      <SearchList itemList={searchInput}></SearchList>
+
       {/* <SearchFilter />
       <SearchList /> */}
       {/* Steps to create the functionality 
