@@ -71,21 +71,6 @@ export default function App() {
 
       {/* <SearchFilter />
       <SearchList /> */}
-      {/* Steps to create the functionality 
-      1. Create the Form(div1) and Create the List elements(div2) *DONE*
-        -> List elements would be there using a variable as a database *DONE*
-      2. Create a state to for filtering which would by default have the above Item List *DONE*
-      3. Write the filter functionality that would filter the list items and would update the state *DONE*
-      4. The form would have this functionality as the onChange in the input box *DONE*
-      5. Refactor the code and now distribute the code to individual components that is the search box and the list *ONGOING*
-      6. Use the props to achieve the functionality
-      7. Style the app using Material UI
-
-
-      I have the roadmap now-> Build accordingly and think rather than looking up for the solution everything is mentioned here :)
-      This will make me understand the basis of the react application I got introduction in the previous project
-      Then move to the JS exercises accordingly on leetcode.
-      */}
     </Container>
   );
 }
