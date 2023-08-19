@@ -7,12 +7,7 @@
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 20px;
-  background: rgb(238, 174, 202);
-  background: radial-gradient(
-    circle,
-    rgba(238, 174, 202, 1) 0%,
-    rgba(199, 233, 148, 1) 100%
-  );
+  background: rgb(240, 240, 240);
 }
 
 h1 {
@@ -30,11 +25,11 @@ h1 {
   flex-direction: row;
   justify-content: space-between;
   cursor: pointer;
-  background-color: #21aeca;
+  background-color: rgb(227, 226, 226);
 }
 
 .accordion-title:hover {
-  background-color: #3ab4cc;
+  background-color: rgb(207, 205, 205);
 }
 
 .accordion-title,
@@ -43,7 +38,7 @@ h1 {
 }
 
 .accordion-content {
-  background-color: #39b9d2;
+  background-color: rgb(207, 205, 205);
 }
 
 @media screen and (max-width: 700px) {

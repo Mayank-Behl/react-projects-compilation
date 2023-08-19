@@ -1,5 +1,4 @@
 import { useState } from "react";
-
 export default function Accordion({ title, content }) {
   const [isActive, setIsActive] = useState(false);
   return (
