@@ -1,6 +1,6 @@
 A recipe app
 
-API used : Spoonacular (https://spoonacular.com/food-api)
+API used : Spoonacular (https://spoonacular.com/food-api)</br>
 Styled Components: https://styled-components.com/docs
 Framer Motion : https://www.framer.com/motion/
 React Router Dom : https://www.npmjs.com/package/react-router-dom
