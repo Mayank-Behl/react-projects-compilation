@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { Wrapper, Card, Gradient } from "./StyledComponents";
+import { Link } from "react-router-dom";
 
 function Popular() {
   const [popular, setPopular] = useState([]);
@@ -24,7 +25,7 @@ function Popular() {
     } else {
       try {
         const api = await fetch(
-          `https://api.spoonacular.com/recipes/random?apiKey=259d53dc86ee4e17a0185870bc6563aa&number=9`
+          `https://api.spoonacular.com/recipes/random?apiKey=07c3f09740544ba7aa8fd7c816f015fd&number=9`
         );
         const data = await api.json();
 
@@ -53,9 +54,11 @@ function Popular() {
             return (
               <SplideSlide key={recipe.id}>
                 <Card>
-                  <p>{recipe.title}</p>
-                  <img src={recipe.image} alt={recipe.title} />
-                  <Gradient />
+                  <Link to={"/recipe/" + recipe.id}>
+                    <p>{recipe.title}</p>
+                    <img src={recipe.image} alt={recipe.title} />
+                    <Gradient />
+                  </Link>
                 </Card>
               </SplideSlide>
             );
