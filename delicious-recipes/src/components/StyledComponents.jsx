@@ -1,5 +1,7 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
+//Home -> Viggie and Popular Components
 export const Wrapper = styled.div`
   margin: 4rem 0rem;
 `;

@@ -24,7 +24,7 @@ const Veggie = () => {
     } else {
       try {
         const api = await fetch(
-          `https://api.spoonacular.com/recipes/random?apiKey=52249af270bd4a6aab23c922c21f7675&number=9&tags=vegetarian`
+          `https://api.spoonacular.com/recipes/random?apiKey=259d53dc86ee4e17a0185870bc6563aa&number=9&tags=vegetarian`
         );
         const data = await api.json();
 
