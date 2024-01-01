@@ -1,0 +1,69 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+}
+
+.comment-section,
+.posted-comments {
+  max-width: 400px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto 0 auto;
+}
+
+.comment-label {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+#comment-box {
+  padding: 10px;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px #aaaaaa;
+}
+
+.post-comment {
+  min-width: 50px;
+  max-width: 100px;
+  margin: 5px 1rem 0 auto;
+  padding: 5px;
+}
+
+.posted-comment-holder {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  width: 100%;
+  padding: 10px;
+}
+
+.button-holder {
+  margin: 10px 0px;
+}
+
+.reply-button,
+.edit-button {
+  margin-right: 5px;
+  padding: 0 5px;
+}
+
+.edit-text-field {
+  padding: 10px;
+}
+
+.reply-input,
+.submit-reply {
+  margin-top: 5px;
+  padding: 10px;
+}

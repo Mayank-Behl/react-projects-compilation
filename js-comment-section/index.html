@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Comment Section</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="posted-comments"></div>
+      <div class="comment-section">
+        <label for="comment-box" class="comment-label">Comment</label>
+        <textarea
+          id="comment-box"
+          name="comment-box"
+          rows="7"
+          cols="50"
+        ></textarea>
+        <button type="submit" class="post-comment" id="post-comment">
+          Post
+        </button>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
+
+<!-- 
+
+    Create two buttons 
+    Reply -> Upon clicking the reply button 
+    -> a text field shows -> accepts text -> On click reply 
+    -> appends that text field to the respective comment
+
+    Edit-> Enables the user to edit the text of the comment
+
+ -->

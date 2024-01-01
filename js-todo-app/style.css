@@ -1,0 +1,8 @@
+.todo-form {
+  display: flex;
+  flex-direction: row;
+}
+
+.mark-complete {
+  text-decoration: line-through;
+}

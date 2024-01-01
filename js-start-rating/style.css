@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.star-rating {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.star-rating i {
+  color: #ccc;
+  margin-right: 5px;
+  transition: color 0.3s;
+}
+
+/* .star-rating i:hover, */
+.star-rating i.active {
+  color: gold;
+}
+
+.star-rating-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.reset-rating {
+  margin: 10px;
+}
